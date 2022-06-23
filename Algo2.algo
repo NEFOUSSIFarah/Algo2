@@ -1,0 +1,35 @@
+ALGORITHM Algo2
+VAR
+    tab1,tab2:  ARRAY_OF INTEGER[20];
+    i,j: INTEGER;
+    s: INTEGER:= 0;
+BEGIN
+    FOR i FROM 0 TO tab1.length-1  DO
+    FOR j FROM 0 TO tab2.length-1  DO
+        IF (tab1[i]==tab2[j] && tab2[i]==tab1[j]) THEN
+            return TRUE;
+            BREAK;
+        ELSE
+            s:= tab1[i]+ tab2[i]
+        END_IF
+    END_FOR
+END
+
+ALGORITHM Algo22
+VAR
+    tab1,tab2:  ARRAY_OF INTEGER[20];
+    i,j: INTEGER;
+    s: INTEGER:= 0;
+BEGIN
+    FOR i FROM 0 TO tab1.length-1  DO
+    FOR j FROM 0 TO tab2.length-1  DO
+        IF (tab1[i]==tab2[j] ) THEN
+            return TRUE;
+            BREAK;
+        ELSE
+            s:= tab1[i]*2
+        END_IF
+    END_FOR
+END
+
+
